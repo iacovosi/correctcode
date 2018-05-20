@@ -18,7 +18,7 @@ if (isset($id) && !empty($id)) {
 
     if ($stmt->affected_rows > 0) {
         //calculate server data
-        $serveraddress = $_SERVER['SERVER_ADDR'];
+        $serveraddress = $_SERVER['SERVER_NAME']; 
         $serverPort = $_SERVER['SERVER_PORT'];
 
         // output data of row
